@@ -18,7 +18,7 @@ async function webCat(path) {
 		let res = await axios.get(path);
 		console.log(res.data);
 	} catch (e) {
-		console.log(`Error reading ${path}:`, e);
+		console.log(`Error fetching ${path}:`, e);
 		process.kill(1);
 	}
 }
